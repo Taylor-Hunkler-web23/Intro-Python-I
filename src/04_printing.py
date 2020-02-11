@@ -16,8 +16,8 @@ print("y is %.2f" % y)
 print("z is %s" % z)
 # Use the 'format' string method to print the same thing
 print("x is {}".format(x))
-print("y is {}".format(y))
-print("xz is {}".format(z))
+print("y is {:.2f}".format(y))
+print("z is {}".format(z))
 # Finally, print the same thing using an f-string
 print(f"x is {x:d}")
 print(f"y is {y:.2f}")

@@ -23,4 +23,4 @@ with open("foo.txt") as f:
 barFile = open("bar.txt", "w")
 barFile.write("First line. Second line. Third line.")
 
-barFile.closed
+barFile.close()

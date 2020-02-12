@@ -35,17 +35,16 @@ args = sys.argv
 print(args)
 
 if len(args) == 1:
-  month = datetime.now().month
-  year = datetime.now().year
-
-
+  calendar.TextCalendar().prmonth(datetime.now().year, datetime.now().month)
+  
 elif len(args) == 2:
   month = int(args[1])
-  year = datetime.now().year
+  calendar.TextCalendar().prmonth(datetime.now().year, month)
 
 elif len(args) == 3:
   month = int(args[1])
   year = int(args[2])
+  calendar.TextCalendar().prmonth(year, month)
 
 else:
     print("Incorrect format")
